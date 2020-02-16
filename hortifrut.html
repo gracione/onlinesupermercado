@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hortifruti</title>
+    <link rel="stylesheet" type="text/css" href="css/indextes.css">
+</head>
+<body>
+    <div id="container">
+        <div id="cabecalho">
+        	<a href="index.html">
+	            <div id="logo">
+	                <figure>
+	                    <img src="img/logo2-bebidas.png" width="115%">
+	                </figure>
+	            </div>
+           	</a>
+            <div id="menu">
+                <div id="pesquisar">
+                    <input type="search" name="pesquisar" placeholder="Digite o nome do produto">
+                    <p><br>BUSCAR</p>
+                </div>
+                <div id="localizacao">
+                    <select>
+                        <option>GO</option>
+                        <option>TO</option>
+                        <option>RJ</option>
+                        <option>SP</option>
+                    </select>
+                </div>
+                <div id="login">
+                        <img src="img/login.png">
+                </div>
+                <div id="localiza">
+                        <img src="img/localizacao.png">
+                </div>
+            </div>
+            <div id="menu2">
+                <table width="100%" height="100%">
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td>
+                            <img src="img/hortifruti.png">
+                        </td>
+                        <td colspan="5">
+                        	<b>HORTIFRUT</b>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="centro">
+        	<div id="propaganda">
+        		<div class="promocao">
+        			<img src="img/promocao/1.png" width="100%" height="100%">
+        		</div>
+        		<div class="promocao">
+        			<img src="img/promocao/1.jpg"  width="100%" height="100%">
+        		</div>
+        		<script type="text/javascript">
+        			var j=0;
+        			var imagem=document.querySelectorAll(".promocao img");
+        			var tempo=setInterval(muda,1000);
+        			function muda(){
+ 
+        			j<=3? j++:j=1;
+        			imagem[0].src="img/promocao/"+j+".png";
+        			imagem[1].src="img/promocao/"+j+".jpg";
+        			}
+        		</script>
+        	</div>
+        	<div id="produtos">
+        		<div class="produto">
+        			<b>Goiaba</b>
+	        		 <img src="img/hortifruti/1.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Goiaba</b>
+	        		 <img src="img/hortifruti/2.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Uva</b>
+	        		 <img src="img/hortifruti/3.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Maracuja</b>
+	        		 <img src="img/hortifruti/4.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Maçã</b>
+	        		 <img src="img/hortifruti/5.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Pera</b>
+	        		 <img src="img/hortifruti/6.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Abacaxi</b>
+	        		 <img src="img/hortifruti/7.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Laranja</b>
+	        		 <img src="img/hortifruti/8.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Acelga</b>
+	        		 <img src="img/hortifruti/9.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+        		<div class="produto">
+        			<b>Mexerica</b>
+	        		 <img src="img/hortifruti/1.jpg">
+	        		 <br>
+	        		<b> 2,99 R$</b>
+	        		<input type="number" name="preco" value="0">
+	        	</div>
+
+	        	<div id="butao">
+		        	<button type="submit" onclick="somar()">Enviar</button>
+		        	<b>Preço total</b>
+		        	<strong>00,00</strong>
+		        	<b> R$</b>
+	        	</div>
+        	</div>
+        </div>
+        <footer>
+            <div id="atendimento">
+                <p>ATENDIMENTO</p>
+                <hr>
+                <p>Horário de funcionamento do SAC<br>
+                <br>Segunda a Sexta: 8h00 às 17h45
+                <br>Sábado: 8h00 às 14h00</p>
+            </div>
+            <div id="contato">
+                <p>CONTATO</p>
+                <hr>
+                <p>64 9 9982 5864</p>
+                <p>gracione2017@gmail.com</p>
+            </div>
+            <div id="informacao">
+                <p>INFORMACAO</p>
+                <hr>
+                <p>Esse empresa ela<br>e totalmente online</p>
+                <p>Faça pedidos e chegara<br>em breve na sua residencia</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+    	var Spreco=new Array;
+    	var n=0;
+    	function somar(){
+    	var preco=document.querySelectorAll("#produtos input");
+    	for (var i =0;i<=9;i++) {
+	    	Spreco[i] = parseInt(preco[i].value);
+    		n+=(Spreco[i]*2.99);
+    	}
+    	var precoTotal=document.querySelector("#produtos strong");
+    	precoTotal.innerHTML=n;
+    	console.log("contador"+n);
+    	}
+
+    </script>
+</body>
+</html>

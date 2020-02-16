@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/indextes.css">
+</head>
+<body>
+    <div id="container">
+        <div id="cabecalho">
+            <div id="logo">
+                <figure>
+                    <img src="img/logo2-bebidas.png" width="115%">
+                </figure>
+            </div>
+            <div id="menu">
+                <div id="pesquisar">
+                    <input type="search" name="pesquisar" placeholder="Digite o nome do produto">
+                    <p><br>BUSCAR</p>
+                </div>
+                <div id="localizacao">
+                    <select>
+                        <option>GO</option>
+                        <option>TO</option>
+                        <option>RJ</option>
+                        <option>SP</option>
+                    </select>
+                </div>
+                <div id="login">
+                        <img src="img/login.png">
+                </div>
+                <div id="localiza">
+                        <img src="img/localizacao.png">
+                </div>
+            </div>
+            <div id="menu2">
+                <table width="100%" height="100%">
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <a href="hortifrut.html">
+                            <img src="img/hortifruti.png">
+                            </a>
+                        </td>
+                        <td>
+                            <img src="img/hortifruti.png">
+                        </td>
+                        <td>
+                            <img src="img/carne.png">
+                        </td>
+                        <td>
+                            <img src="img/limpezai.png">
+                        </td>
+                        <td>
+                                <img src="img/hortifruti.png">
+                        </td>
+                        <td>
+                                <img src="img/bebidas.png">
+                        </td>
+                        <td>
+                                <img src="img/hortifruti.png">
+                        </td>
+                        <td>
+                                <img src="img/hortifruti.png">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="centro">
+            <div id="seta">
+                <img src="img/seta2.png">
+            </div>
+            <div id="seta2">
+                <img src="img/seta.png">
+            </div>
+            <img id="imagem" src="img/promocao-lacta.png" width="100%" height="100%">
+        </div>
+        <footer>
+            <div id="atendimento">
+                <p>ATENDIMENTO</p>
+                <hr>
+                <p>Horário de funcionamento do SAC<br>
+                <br>Segunda a Sexta: 8h00 às 17h45
+                <br>Sábado: 8h00 às 14h00</p>
+            </div>
+            <div id="contato">
+                <p>CONTATO</p>
+                <hr>
+                <p>64 9 9982 5864</p>
+                <p>gracione2017@gmail.com</p>
+            </div>
+            <div id="informacao">
+                <p>INFORMACAO</p>
+                <hr>
+                <p>Esse empresa ela<br>e totalmente online</p>
+                <p>Faça pedidos e chegara<br>em breve na sua residencia</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        function executar(){
+            var menu = document.querySelectorAll("#menu2 td");
+        ///
+            menu[5].addEventListener("mouseover",function menur(){
+            menu[5].style.background="blue";          
+        });
+        /////////////
+            menu[5].addEventListener("mouseout",function menur(){
+            menu[5].style.background="#9a75f7";          
+        });
+        ///////////////4
+            menu[4].addEventListener("mouseover",function menur(){
+            menu[4].style.background="blue";          
+        });
+        /////////////
+            menu[4].addEventListener("mouseout",function menur(){
+            menu[4].style.background="#9a75f7";          
+        });
+        ///////////////3
+            menu[3].addEventListener("mouseover",function menur(){
+            menu[3].style.background="blue";          
+        });
+        /////////////
+            menu[3].addEventListener("mouseout",function menur(){
+            menu[3].style.background="#9a75f7";          
+        });
+        ///////////////2
+            menu[2].addEventListener("mouseover",function menur(){
+            menu[2].style.background="blue";          
+        });
+        /////////////
+            menu[2].addEventListener("mouseout",function menur(){
+            menu[2].style.background="#9a75f7";          
+        });
+        ///////////////
+
+        }
+        
+        window.addEventListener("load",executar);
+        var i=0;
+        var n=setInterval(slide,1032);
+        function slide(){
+            i+=1;
+            i>4? i=0:i+=0;
+                    var seta = document.querySelector("#seta img");
+                    seta.addEventListener("click",function mud(){
+                    i=1;
+                    });
+            console.log(i);
+            var img=document.querySelector("#imagem"); 
+            img.src="img/slide/slide"+i+".png";            
+        }
+    </script>
+</body>
+</html>
